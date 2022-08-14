@@ -158,8 +158,8 @@
 				\item Notasi: $ (a,b] $ atau $ [a,b) $
 				\item Notasi himpunan:
 				\begin{align*}
-					\text{Jika notasi } (a,b]& \text{, maka notasi himpunan }\{x:a < a \leq b\} \\
-					\text{Jika notasi } [a,b)& \text{, maka notasi himpunan }\{x:a \leq a < b\} \\
+					\text{Jika notasi } (a,b] & \text{, maka notasi himpunan }\{x:a < a \leq b\} \\
+					\text{Jika notasi } [a,b) & \text{, maka notasi himpunan }\{x:a \leq a < b\} \\
 				\end{align*}
 				\item Grafik selang:
 				\begin{multicols}{2}
@@ -179,9 +179,242 @@
 				\end{multicols}
 			\end{itemize}
 		\end{frame}
-
+		
+		\begin{frame}
+			\frametitle{Selang tak hingga dan tertutup}
+			\begin{itemize}
+				\item Notasi: $ [a,+\infty) $ atau $ (-\infty,b] $
+				\item Notasi himpunan:
+				\begin{align*}
+					\text{Jika notasi } [a,+\infty) & \text{, maka notasi himpunan }\{x:x \geq a\} \\
+					\text{Jika notasi } (-\infty,b] & \text{, maka notasi himpunan }\{x: x \leq b\} \\
+				\end{align*}
+				\item Grafik selang:
+				\begin{multicols}{2}
+					\begin{figure}
+						\centering
+						\includegraphics[width=0.5\linewidth]{pict/06}
+						\caption{Grafik selang $[a,+\infty)$}
+						\label{fig:06}
+					\end{figure}
+					\columnbreak
+					\begin{figure}
+						\centering
+						\includegraphics[width=0.5\linewidth]{pict/07}
+						\caption{Grafik selang $(-\infty,b]$}
+						\label{fig:07}
+					\end{figure}
+				\end{multicols}
+			\end{itemize}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Selang tak hingga dan terbuka}
+			\begin{itemize}
+				\item Notasi: $ (a,+\infty) $ atau $ (-\infty,b) $
+				\item Notasi himpunan:
+				\begin{align*}
+					\text{Jika notasi } (a,+\infty) & \text{, maka notasi himpunan }\{x:x > a\} \\
+					\text{Jika notasi } (-\infty,b) & \text{, maka notasi himpunan }\{x: x < b\} \\
+				\end{align*}
+				\item Grafik selang:
+				\begin{multicols}{2}
+					\begin{figure}
+						\centering
+						\includegraphics[width=0.5\linewidth]{pict/08}
+						\caption{Grafik selang $(a,+\infty)$}
+						\label{fig:08}
+					\end{figure}
+					\columnbreak
+					\begin{figure}
+						\centering
+						\includegraphics[width=0.5\linewidth]{pict/09}
+						\caption{Grafik selang $(-\infty,b)$}
+						\label{fig:09}
+					\end{figure}
+				\end{multicols}
+			\end{itemize}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Selang tak hingga}
+			\begin{itemize}
+				\item Notasi: $ (-\infty,+\infty) $
+				\item Notasi himpunan:
+				\begin{equation*}
+					\{ x : x \in \mathcal{R} \}
+				\end{equation*}
+				\item Grafik selang:
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.5\linewidth]{pict/10}
+					\caption{Grafik selang $(-\infty,+\infty)$}
+					\label{fig:10}
+				\end{figure}
+			\end{itemize}
+		\end{frame}
+	
 	\subsection{Penyelesaian Pertidaksamaan}
-
+	
+		\begin{frame}
+			\frametitle{Penyelesaian pertidaksamaan}
+			Hal-hal yang perlu diperhatikan dalam menyelesaikan suatu pertidaksamaan
+			\begin{enumerate}
+				\item Prosedur menyelesaikan pertidaksamaan adalah mengubah pertidaksamaan satu langkah demi satu langkah hingga diperoleh himpunan penyelesaiannya jelas.
+				\item Dapat dilakukan operasi-operasi tertentu (tambah, kurang, kali, bagi, akar, pangkat) pada kedua ruas pada suatu pertidaksamaan. Perlakuan pada kedua ruas harus sama, contohnya:
+				\begin{enumerate}
+					\item Kedua ruas ditambah atau dikurangi dengan suatu bilangan;
+					\item Kedua ruas dikali atau dibagi dengan suatu bilangan positif;
+					\item Jika kedua ruas dikali atau dibagi dengan bilangan negatif, tanda pertidaksamaan harus berbalik arah.
+				\end{enumerate}
+			\end{enumerate}
+		\end{frame}
+	
+	\subsection{Contoh Soal}
+	
+		\begin{frame}
+			\frametitle{Contoh 1}
+			Selesaikan pertidaksamaan
+			\begin{equation*}
+				-5x - 10 < 15
+			\end{equation*}
+			dan tunjukkan garis bilangan himpunan penyelesaiannya.
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Jawaban Contoh 1}
+			\begin{align*}
+				-5x - 10 & < 15 &\\
+				-5x - 10 + 10 & < 15 + 10 & \text{(kedua ruas ditambah 10)} \\
+				-5x & < 25 & \\
+				\frac{-5x}{-5} & > \frac{25}{-5} & \text{(kedua ruas dikali dengan } -\frac{1}{5} \text{)}\\
+				x & > -5
+			\end{align*}
+		\end{frame}
+		
+		\begin{frame}{Jawaban Contoh 1}
+			\begin{itemize}
+				\item Himpunan penyelesaiannya adalah $ \{ x : x > -5 \} $, atau \item Dalam bentuk selang $ (-5,+\infty) $.
+				\item Berikut $ (-5,+\infty) $ diinterpretasikan dalam bentuk garis bilangan.
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.3\linewidth]{pict/11}
+					\caption{Grafik selang $(-5,+\infty)$}
+					\label{fig:11}
+				\end{figure}
+			\end{itemize}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Contoh 2}
+			Selesaikan pertidaksamaan
+			\begin{equation*}
+				-5 \leq 2x + 6 < 4
+			\end{equation*}
+			dan tunjukkan garis bilangan himpunan penyelesaiannya.
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Jawaban Contoh 2}
+			\begin{tabular}{rcccll}
+				$ -5 $ & $\leq$ & $ 2x + 6 $ & < & $ 4 $ &  \\
+				$ -5-6 $ & $\leq$ & $ 2x + 6 - 6 $ & < & $ 4 - 6 $ & (dikurangin 6) \\
+				$ -11 $ & $\leq$ & $ 2x $ & < & $ -2 $ & \\
+				$-11/2$ & $\leq$ & $2x/2$ & < & $-2/2$ & (dibagi 2 atau dikali $\frac{1}{2}$)\\
+				$ -11/2 $ & $\leq$ & $ x $ & < & $ -1 $ &  \\
+			\end{tabular}
+		\end{frame}
+		
+		\begin{frame}{Jawaban Contoh 3}
+			Himpunan penyelesaiannya adalah
+			\begin{equation*}
+				\left\{ x:-\frac{11}{2} \leq x \leq -1 \right\}
+			\end{equation*}
+			atau ditulis dalam bentuk selang $ \left[ -\frac{11}{2}, -1 \right) $ atau dengan garis bilangan
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.3\linewidth]{pict/12}
+				\caption{Grafik selang $ \left[ -\frac{11}{2}, -1 \right) $ }
+				\label{fig:12}
+			\end{figure}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Contoh 3}
+			Selesaikan pertidaksamaan 
+			\begin{equation*}
+				x^2 - x < 6
+			\end{equation*}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Jawaban Contoh 3}
+			\begin{align*}
+				x^2 - x &< 6 &\\
+				x^2 - x - 6 & < 6 - 6 & \text{(dikurangi 6)}\\
+				(x+2)(x-3)& <  0 &\text{(difaktorkan)}\\
+			\end{align*}
+			\begin{itemize}
+				\item Dapat dilihat bahwa $ x = -2 $ dan $ x = 3 $ membagi garis bilangan kedalam tiga selang terbuka yaitu $ (-\infty, -2) $, $ (-2,3) $, dan $ (3, +\infty) $.
+				\item Selanjutnya kita harus mengecek setiap tanda diselang dengan cara diambil satu titik yang berada di tiga selang tersebut.
+			\end{itemize}
+		\end{frame}
+	
+		\begin{frame}{Jawaban Contoh 3}
+			\begin{itemize}
+				\item $ x = -3 $ mewakili titik yang berada pada selang $ (-\infty, -2) $
+				\item $ x = 0 $ mewakili titik yang berada pada selang $ (-2, 3) $
+				\item $ x = 5 $ mewakili titik yang berada pada selang $ (3, +\infty) $
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.7\linewidth]{pict/13}
+				\end{figure}
+				\item Daerah yang memenuhi $ (x+2)(x-3)<0 $ adalah selang $ (-2,3) $
+			\end{itemize}
+			
+		\end{frame}
+	
+		\begin{frame}{Jawaban Contoh 3}
+			Himpunan penyelesaiannya adalah
+			$$ \{x: 2 < x < 3\} $$
+			atau dalam bentuk selang $ (-2,3) $ atau dengan garis bilangan
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.3\linewidth]{pict/14}
+				\caption{Grafik selang $ (-2,3) $ dan tanda di masing-masing daerahnya}
+				\label{fig:14}
+			\end{figure}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Contoh 4}
+			Selesaikan pertidaksamaan
+			\begin{equation*}
+				3x^2 - x - 2 \geq 0
+			\end{equation*}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Jawaban Contoh 4}
+			\begin{align*}
+				3x^2 - x - 2 &\geq 0 &\\
+				(x-1)(3x+2) &\geq 0 & \text{(difaktorkan)}
+			\end{align*}
+			\begin{itemize}
+				\item Dapat dilihat bahwa $ x = -\frac{2}{3}$ dan $ x = 1 $ membagi garis bilangan ke dalam tiga selang tertutup yaitu $ (-\infty, -3] $, $ [-3 , 1] $, dan $ [1, +\infty) $.
+			\end{itemize}
+		\end{frame}
+	
+		\begin{frame}{Jawaban Contoh 4}
+			\begin{itemize}
+				\item Dapat dilihat bahwa $ x = -\frac{2}{3}$ dan $ x = 1 $ membagi garis bilangan ke dalam tiga selang tertutup yaitu $ (-\infty, -3] $, $ [-3 , 1] $, dan $ [1, +\infty) $.
+			\end{itemize}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Contoh 5}
+		\end{frame}
+	
 \section{Fungsi Dan Limit}
 
 	\subsection{Fungsi}
