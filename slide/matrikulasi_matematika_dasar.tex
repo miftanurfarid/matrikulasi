@@ -525,13 +525,147 @@
 		\begin{frame}
 			\frametitle{Jawaban Contoh 1}
 			\begin{enumerate}
-				\item $ f(x) $
-				\item $ f(4+h) $
-				\item $\frac{f(4+h) - f(4)}{h}$
+				\item $ f(4) = (4)^2 - 2(4) = 8 $
+				\item $ f(4+h) = (4+h)^2 - 2(4+h) = 16 + 8h + h^2 - 8 - 2h = 8 + 6h + h^2 $
+				\item $\frac{f(4+h) - f(4)}{h} = \frac{8 + 6h + h^2 - 8}{h} = \frac{6h+h^2}{h} = 6 + h$
+			\end{enumerate}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Contoh 2}
+			Selidiki domain dan range dari $ g(x) = 1 + \sqrt{x} $
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Jawaban Contoh 2}
+			Domain dari fungsi $ g(x) $ adalah $ [0, +\infty) $. Ketika nilai - nilai pada domain $ [0, +\infty) $ disubstitusikan ke dalam $ 1 + \sqrt{x} $, maka diperoleh range dari $ g $ yaitu $ [1, +\infty) $.
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Soal Latihan}
+			\begin{enumerate}
+				\item Diberikan fungsi
+				\begin{equation*}
+					f(x) = \begin{cases}
+						2x^3 - 8,	& \text{ jika } x \leq 3\\
+						\sqrt{x-3}, & \text{ jika } x > 3
+					\end{cases}
+				\end{equation*}
+				\begin{enumerate}
+					\item $ f(4) $
+					\item $ f(\frac{1}{2}) $
+					\item $ f(3 - t^2) $
+				\end{enumerate}
+				\item Selidiki domain dan range dari fungsi - fungsi berikut:
+				\begin{enumerate}
+					\item $ f(x) = \frac{1}{x} $
+					\item $ g(x) = \frac{1}{x^2 + 1} $
+					\item $ h(x) = \sqrt{2x - 1}$
+					\item $ i(x) = \frac{2}{\sqrt{x^2 - 4}} $
+				\end{enumerate}
+			\end{enumerate}
+		\end{frame}
+		
+		\begin{frame}{Soal Latihan}
+			\begin{enumerate}\setcounter{enumi}{2}
+				\item Diberikan fungsi $ f(x) = x- 1 $. Tentukan rumus fungsi dan domain dari:
+				\begin{enumerate}
+					\item $ f(2x) + f(\sqrt{x}) $
+					\item $ f(x^2) - f(-x) $
+					\item $ f(1-t) + 2f^2(t) $
+				\end{enumerate}
+				\item Selidiki komposisi fungsi $ f $ terhadap $ g $ dan domainnya jika diberikan fungsi $ f $ dan $ g $ sebagai berikut:
+				\begin{enumerate}
+					\item $ f(x) = \sqrt{x} \text{ dan } g(x) = \frac{1}{x}$
+					\item $ f(x) = x^2 + x - 1 \text{ dan } g(x) = 1 - \sqrt{x} $
+				\end{enumerate}
 			\end{enumerate}
 		\end{frame}
 	
 	\subsection{Limit}
+	
+		\begin{frame}
+			\frametitle{Limit}
+			\begin{itemize}
+				\item Limit fungsi adalah perilaku suatu fungsi mendekati suatu nilai tertentu.
+				\item Limit terbagi menjadi dua yaitu limit kiri dan limit kanan dari suatu fungsi.
+				\item Limit kiri dari suatu fungsi $ f(x) $ mendekati suatu nilai $ x_0 $ dinotasikan sebagai
+				\begin{equation*}
+					\lim\limits_{x \rightarrow x_0^-}f(x)
+				\end{equation*}
+				\item Limit kanan dari suatu fungsi $ f(x) $ mendekati suatu nilai $ x_0 $ dinotasikan sebagai
+				\begin{equation*}
+					\lim\limits_{x \rightarrow x_0^+}f(x)
+				\end{equation*}
+			\end{itemize}
+		\end{frame}
+	
+		\begin{frame}{Limit}
+			\begin{itemize}
+				\item Limit dua sisi dari suatu fungsi $ f(x) $ dinotasikan dengan
+				\begin{equation*}
+					\lim\limits_{x \rightarrow x_0}f(x) = L
+				\end{equation*}
+				\item Jika nilai dari limit kanan dan limit kiri dari suatu fungsi $ f $ sama, maka dapat disimpulkan bahwa fungsi $ f $ memiliki limit dan nilai limitnya adalah $ L $.
+				\item \textbf{Perlu diperhatikan dalam mengerjakan soal limit, nilai fungsi $ f(x) $ harus terdefinisi di $ x = x_0 $ atau $ \lim\limits_{x \rightarrow x_0} f(x) \neq \frac{0}{0} $ }
+				\item Apabila bertemu dengan fungsi yang seperti ini, maka fungsi $ f(x) $ harus diserderhanakan terlebih dahulu untuk mendapatkan nilai limitnya. Salah satu caranya adalah dengan
+				pemfaktoran.
+			\end{itemize}
+		\end{frame}
+	
+		\begin{frame}{Limit}
+			Aturan dasar limit meliputi
+			\begin{align*}
+				\lim\limits_{x \rightarrow c} k &= k \\
+				\lim\limits_{x \rightarrow - \infty} k &= k \\
+				\lim\limits_{x \rightarrow + \infty} k &= k \\
+				\lim\limits_{x \rightarrow c} x &= c \\
+				\lim\limits_{x \rightarrow - \infty} x &= - \infty \\
+				\lim\limits_{x \rightarrow + \infty} x &= + \infty \\
+			\end{align*}
+			dengan $ k $ dan $ c $ konstanta.
+		\end{frame}
+	
+		\begin{frame}{Limit}
+			Jika didefinisikan dua buah fungsi, $ f $ dan $ g $ yang memiliki limit masing-masing, yaitu $ L_1 $ dan $ L_2 $ maka:
+			\begin{itemize}
+				\item[$\bullet$] $ \lim[f(x) + g(x)] = \lim f(x) + \lim g(x) = L_1 + L_2 $
+				\item[$\bullet$] $ \lim[f(x) - g(x)] = \lim f(x) - \lim g(x) = L_1 - L_2 $
+				\item[$\bullet$] $ \lim[f(x)g(x)] = \lim f(x) \cdot \lim g(x) = L_1L_2 $
+				\item[$\bullet$] $ \lim\left[\frac{f(x)}{g(x)}\right] = \frac{\lim f(x)}{\lim g(x)} = \frac{L_1}{L_2},~\text{ jika } L_2 \neq 0 $
+				\item[$\bullet$] $ \lim \sqrt[n]{f(x)} = \sqrt[n]{\lim f(x)} = \sqrt[n]{ L_1 }$ untuk $ L_1 \geq 0 $ jika $ n $ genap
+				\item[$\bullet$] $ \lim \left[ f(x) \right] ^n = \left[ \lim f(x) \right]^n $
+				\item[$\bullet$] $ \lim k f(x) = \lim k \cdot \lim f(x) = k \cdot \lim f(x) $
+			\end{itemize}
+			Notasi $ \lim $ dapat menyatakan $ \lim\limits_{x \rightarrow c} $, $ \lim\limits_{x \rightarrow c^-} $, $ \lim\limits_{x \rightarrow c^+} $, $ \lim\limits_{x \rightarrow - \infty} $, dan $ \lim\limits_{x \rightarrow + \infty} $
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Contoh 3}
+			Tentukan
+			\begin{equation*}
+				\lim\limits_{x \rightarrow 2} \left( x^3 - 2\sqrt{x} - 3 \right)
+			\end{equation*}
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{Jawaban Contoh 3}
+			\begin{align*}
+				\lim\limits_{x \rightarrow 2} \left( x^3 - 2\sqrt{x} - 3 \right) & = \lim\limits_{x \rightarrow 2} x^3 - \lim\limits_{x \rightarrow 2} 2\sqrt{x} - \lim\limits_{x \rightarrow 2} 3 \\
+				& = \left[\lim\limits_{x \rightarrow 2} x^3\right] - 2\lim\limits_{x \rightarrow 2} \sqrt{x} - \lim\limits_{x \rightarrow 2} 3 \\
+				& = \left[\lim\limits_{x \rightarrow 2} x^3\right] - 2\sqrt{\lim\limits_{x \rightarrow 2} x} - \lim\limits_{x \rightarrow 2} 3 \\
+				& = [2]^3 - 2\sqrt{2} - 3 \\
+				& = 5 - 2\sqrt{2}
+			\end{align*}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Contoh 4}
+			Tentukan
+			\begin{equation*}
+				\lim\limits_{x \rightarrow 3} \left( \frac{x^2 - 5x + 6}{x - 3} \right)
+			\end{equation*}
+		\end{frame}
 
 \section{Trigonometri}
 
