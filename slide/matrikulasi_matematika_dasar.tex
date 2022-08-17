@@ -824,6 +824,104 @@
 
 	\begin{frame}
 		\frametitle{Turunan}
+		Dimisalkan fungsi $ f $ terdefinisi pada selang terbuka $ I $ yang memuat $ c $. Turunan pertama dari fungsi $ f $ di titik $ c $ ditulis $ f'(c) $ didefinisikan sebagai:
+		\begin{equation}
+			f'(c) = \lim\limits_{x \rightarrow c} \frac{f(x) - f(c)}{x - c} ,
+		\end{equation}
+		jika limitnya ada.
+	\end{frame}
+
+	\begin{frame}{Turunan}
+		Apabila dilakukan penggantian $ x = c + h $, jika $ x \rightarrow c \leftrightarrow h \rightarrow 0 $ dan $ x - c = h $, turunan fungsi $ f $ di $ c $ dapat dituliskan dalam bentuk:
+		\begin{equation}
+			f'(c) = \lim\limits_{h \rightarrow 0} \frac{f(c + h) - f(c)}{h}
+		\end{equation}
+	\end{frame}
+
+	
+	\begin{frame}{Turunan}
+		\begin{itemize}
+			\item Jika suatu fungsi konstan, misal $ f(x) = k $ untuk sembarang bilangan rill $ k $, maka
+			\begin{equation}
+				\frac{d}{dx}[k] = 0
+			\end{equation}
+			\item Jika $ n $ suatu bilangan bulat positif, maka:
+			\begin{equation}
+				\frac{d}{dx}[x^n] = n x^{n-1}
+			\end{equation}
+			\item Jika $ f $ fungsi yang dapat diturunkan di $ x $ dan $ k $ sebarang bilangan rill, maka $ kf $ juga dapat diturunkan di $ x $, yaitu:
+			\begin{equation}
+				\frac{d}{dx}[kf(x)] = k\frac{d}{dx}[f(x)]
+			\end{equation}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}{Turunan}
+		\begin{itemize}
+			\item Jika $ f $ dan $ g $ fungsi yang dapat diturunkan di $ x $, maka $ f + g $ dan $ f - g $ juga dapat diturunkan di $ x $ dan
+			\begin{equation}
+				\frac{d}{dx}[f(x) + g(x)] = \frac{d}{dx}[f(x)] + \frac{d}{dx}[g(x)]
+			\end{equation}
+			\begin{equation}
+				\frac{d}{dx}[f(x) - g(x)] = \frac{d}{dx}[f(x)] - \frac{d}{dx}[g(x)]
+			\end{equation}
+			\item Jika $ g $ dan $ g $ dapat diturunkan di $ x $, maka
+			\begin{equation}
+				\frac{d}{dx}[f(x)g(x)] = f(x)\frac{d}{dx}[g(x)] + \frac{d}{dx}[f(x)]g(x)
+			\end{equation}
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}{Turunan}
+		\begin{itemize}
+			\item Jika $ f $ dan $ g $ dua fungsi yang dapat diturunkan di $ x $, dan $ g(x) \neq 0 $ maka $ \frac{f}{g} $ juga dapat diturunkan di $ x $, dan
+			\begin{equation}
+				\frac{d}{dx}\left[ \frac{f(x)}{g(x)} \right] = \frac{\frac{d}{dx}[f(x)]g(x) + f(x)\frac{d}{dx}[g(x)]}{[g(x)]^2}
+			\end{equation}
+			\item Untuk turunan fungsi trigonometri sebagai berikut
+			\begin{center}
+				\includegraphics[width=0.7\linewidth]{pict/34}
+			\end{center}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Contoh 1}
+		Menggunakan definisi turunan, tentukan turunan terhadap $ x $ dari $ f(x) = \sqrt{x} $
+		\vfill\null
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Contoh 2}
+		Dapatkan turunan dari fungsi $ f(x) = 2x(x^2 + 1) $
+		\vfill\null
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Contoh 3}
+		Dapatkan turunan dari fungsi $ f(x) = \sin5x $
+		\vfill\null
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Soal Latihan}
+		\begin{enumerate}
+			\item Carilah turunan fungsi berikut menggunakan definisi turunan
+			\begin{enumerate}
+				\item[a.] $ f(x) = x^2 + 5x $
+				\item[a.] $ f(x) = \sqrt{x} + 1 $
+				\item[c.] $ f(x) = \sin x $
+			\end{enumerate}
+			\item Tentukan $ f'(x) $ dan $ f'(1) $ jika
+			\begin{enumerate}
+				\item[a.] $ f(x) = \sqrt{5} $
+				\item[b.] $ f(x) = 5\sqrt{x} $
+				\item[c.] $ f(x) = \left(2x^2+5\right)^3 $
+				\item[d.] $ f(x) = \frac{3x^3-5x}{x^2} $
+				\item[e.] $ f(x) = x^2 \tan(2x+1) $
+			\end{enumerate}
+		\vfill\null
+		\end{enumerate}
 	\end{frame}
 
 \section{Integral}
