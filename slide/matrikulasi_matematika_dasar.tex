@@ -930,18 +930,164 @@
 		
 		\begin{frame}
 			\frametitle{Integral Tak Tentu}
+			Secara geometri integral merupakan suatu luasan daerah pada kurva tertentu. Jika diberikan suatu fungsi $ f(x) $ yang kontinu tak negatif pada interval $ [a, b] $, maka yang dimaksud dengan
+			\begin{equation}
+				\int_a^b f(x) dx
+			\end{equation}
+			adalah luasan dibawah kurva $ f(x) $. 
+		\end{frame}
+	
+		\begin{frame}{Integral Tak Tentu}
+			Integral juga disebut sebagai \textbf{anti turunan}. Beberapa contoh integral tak tentu sebagai anti turunan dapat dilihat pada tabel berikut
+			\begin{center}
+				\includegraphics[width=0.6\linewidth]{pict/35}
+			\end{center}
+		\end{frame}
+		
+		\begin{frame}{Integral Tak Tentu}
+			Secara umum integral tak tentu dapat ditulis
+			\begin{equation}
+				\int ax^n dx = \frac{a}{n+1}x^{n+1} + C
+			\end{equation}
+		\end{frame}
+	
+		\begin{frame}{Integral Tak Tentu}
+			Integral tak tentu mempunyai sifat – sifat sebagai berikut:
+			\begin{enumerate}
+				\item Pengali konstan dapat dikeluarkan dari operasi integral
+				\begin{equation}
+					\int c f(x) dx = c \int f(x) dx
+				\end{equation}
+				\item  Integral dari penjumlahan dan pengurangan fungsi integran dapat dinyatakan sebagai jumlahan atau pengurangan dari masing-masing integral fungsi yang berkaitan
+				\begin{equation}
+					\int [f(x) \pm g(x)] = \int f(x) dx \pm \int g(x) dx
+				\end{equation}
+			\end{enumerate}
 		\end{frame}
 	
 	\subsection{Integral dengan Substitusi}
 	
 		\begin{frame}
 			\frametitle{Integral dengan Substitusi}
+			Selain mengintegralkan secara langsung, terdapat beberapa teknik pengintegralan, salah satunya integral dengan substitusi. Berikut langkah – langkah pengerjaan integral dengan teknik substitusi:
+			\begin{enumerate}
+				\item Tentukan suatu fungsi tertentu sebagai $ u $, yaitu $ u = g(x) $.
+				\item Hitung $ \frac{du}{dx} = g'(x) $.
+				\item Substitusi $ u = g(x) $ dan $ du = g'(x)dx $. Perhatikan bahwa, pada step ini integrase harus dalam suku-suku $ u $, sehingga tidak ada suku-suku variabel $ x $.
+				\item Selesaikan integral tersebut (masih dalam suku-suku $ u $).
+				\item Ganti kembali $ u $ dengan $ g(x) $, sehingga diperoleh hasil dengan variabel $ x $
+			\end{enumerate}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Contoh 1}
+			Tentukan $$ \int 5x^{\frac{3}{5}} dx $$
+			\vfill
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Contoh 2}
+			Tentukan $$ \int(2x^2+3)^{25}4xdx $$
+			\vfill
 		\end{frame}
 	
 	\subsection{Integral Tentu}
 	
 		\begin{frame}
 			\frametitle{Integral Tentu}
+			\begin{itemize}
+				\item Integral tertentu merupakan suatu integral yang memiliki batas integrasi, yaitu batas bawah, yang disimbolkan dengan $ a $ dan batas atas, yang disimbolkan dengan $ b $. Jika suatu integral memiliki batas, maka hasil integral tersebut adalah tunggal.
+				\item Misalkan $ F(x) $ merupakan suatu fungsi anti turunan dari fungsi $ f(x) $ pada interval $ [a, b] $, maka
+				\begin{equation}
+					\int_{a}^{b} f(x) dx = F(b) - F(a)
+				\end{equation}
+			\end{itemize}
 		\end{frame}
-
+	
+		\begin{frame}{Integral Tentu}
+			Berikut sifat – sifat dari integral tertentu:
+			\begin{enumerate}
+				\item Jika $ a = b $ maka
+				\begin{equation}
+					\int_{a}^{b} f(x) dx = \int_{a}^{a} f(x) dx = 0
+				\end{equation}
+				\item  Jika $ f $ adalah fungsi yang terintegral pada interval $ [a, b] $, maka 
+				\begin{equation}
+					\int_{a}^{b} f(x) dx = -\int_{b}^{a} f(x) dx
+				\end{equation}
+			\end{enumerate}
+		\end{frame}
+	
+		\begin{frame}{Integral Tentu}
+			\begin{enumerate}\setcounter{enumi}{2}
+				\item Jika $ f(x) $ dan $ g(x) $ merupakan fungsi yang dapat diintegralkan pada interval $ [a, b] $ dan $ k $ adalah suatu konstanta, maka
+				\begin{equation}
+					\int_{a}^{b} k f(x) dx = k\int_{a}^{b} f(x) dx
+				\end{equation}
+				\begin{equation}
+					\int_{a}^{b} f(x) \pm g(x) dx = \int_{a}^{b} f(x) dx \pm \int_{a}^{b} g(x) dx
+				\end{equation}
+			\end{enumerate}
+		\end{frame}
+	
+		\begin{frame}{Integral Tentu}
+			\begin{enumerate}\setcounter{enumi}{3}
+				\item Jika $ f(x) $ terintegralkan pada interval $ [a, b] $, dimana $ c $ adalah suatu titik diantara interval $ [a, b] $, maka
+				\begin{equation}
+					\int_{a}^{b} f(x) dx = \int_{a}^{c} f(x) dx + \int_{c}^{b} f(x) dx
+				\end{equation}
+				\item Integral tertentu tidak bergantung pada variabel yang digunakan
+				\begin{equation}
+					\int_{a}^{b} f(x) dx = \int_{a}^{b} f(t) dt = \int_{a}^{b} f(u) du
+				\end{equation}
+			\end{enumerate}
+		\end{frame}
+	
+		\begin{frame}{Integral Tentu}
+			\begin{enumerate}\setcounter{enumi}{5}
+				\item Jika $ f(x) $ dan $ g(x) $ terintegralkan pada interval $ [a, b] $ dan $ f(x) \leq g(x) $ pada $ x \in [a, b] $,
+				maka
+				\begin{equation}
+					\int_{a}^{b} f(x) dx \leq \int_{a}^{b} g(x) dx
+				\end{equation}
+			\end{enumerate}
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Contoh 3}
+			Tentukan $$ \int_{0}^{\frac{\pi}{2}} (\sin x + \cos x) dx $$
+			\vfill
+		\end{frame}
+		
+		\begin{frame}
+			\frametitle{Contoh 4}
+			Diberikan $$ f(x) = \begin{cases}
+				x + 1, &x \geq 0 \\
+				2x, &x < 0
+			\end{cases} $$
+			\vfill
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Contoh 5}
+			Selesaikan integral berikut $$ \int_{0}^{1} 2x(x^2+3)^5 $$
+			\vfill
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Soal Latihan}
+			\begin{enumerate}
+				\item Selesaikan:
+				\begin{multicols}{2}
+					\begin{center}
+						\includegraphics[width=0.6\linewidth]{pict/36}
+					\end{center}
+					\columnbreak
+					\begin{center}
+						\includegraphics[width=0.6\linewidth]{pict/37}
+					\end{center}
+				\end{multicols}
+			\end{enumerate}
+		\end{frame}
+	
 \end{document}
